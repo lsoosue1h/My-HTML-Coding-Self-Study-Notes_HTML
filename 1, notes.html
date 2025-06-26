@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>수업 노트, HTML 편</title>
+      <meta charset="utf-8">
+   </head>
+   <body>
+      <h1>hello web!</h1>
+      '1' is the name of webpage, and 'html(Hypertext Markup Language)' is extension(확장자).
+
+      <h2>Notes 1</h2> 
+         <h3>tag의 정의</h3>
+         "<>, </>"는 (여는&닫는)태그. 웹의 중요한 문법이다.
+         <p>strong 태그는 강조, 쉡게 말하자면 볼드체. u 태그는 밑줄. <a href="1-6.html">예시</a></p> 
+         <p>h(1~6) 태그는 제목(숫자가 클수록 중요도 낮음).<a href="1-7.html">예시</a></p>
+         <br>view-source: 로 html 소스 코드 열람 가능
+         <br>특정 코드 검색하는 방법: Ctrl + F, Command (⌘) + F
+
+      <h2>Notes 2</h2>
+         <h3>두 가지의 줄 바꿈 태그; br과 p</h3>
+            <p>'br' 태그는 줄바꿈(엔터키 역할, new line)을 하는 태그다. 'p' 태그는 단락(paragraph)을 나눈다. p태그를 2개 쓰면 두 개의 단락이 생긴다. <a href="1-9-1.html" target="_blank" title="p tag, no margin">예시</a>
+            <br>태그 안에 CSS문법 {예시로,'style="margin-top:40px;"'} 으로 간격을 추가해서 p 태그의 낮은 시각적 자유도를 해결한다.<a href="1-9-6.html" target="_blank" title="p tag, with margin">예시</a>
+            <br>위와 아래의 예시로 비교해 보자.</p>
+         <h3>이미지 삽입: img</h3>
+            <p>img 태그는 이미지이다. 이 태그로 html에 이미지를 삽입할 수 있다. 속성(attribute)는 태그의 정보가 부족할 때 추가로 정보를 제공한다. 예시로 'img scr="coding.jpg"', 'width="70%"' 가 있다. 
+            참고로 속성을 쓰는 순서는 상관없다.<a href="1-11-1.html">예시</a></p>
+            <br>형식은 <strong>태그 속성이나 css문법</strong>이다.
+
+      <h2>Notes 3</h2>
+         <h3>목차 list</h3>
+            <p>li 태그는 목차(list)를 만든다. ul 태그(unordered list)는 li를 그룹핑하는 부모태그이다. 즉, 목차들을 서로 구분한다. <a href="1-12.html">또 다른 예시</a>
+            <Ul>
+               <li>milk</li>
+               <li>eggs</li>
+            </Ul>
+            <ul>
+               <li>phone case</li>
+               <li>pen</li>
+            </ul>
+            li 태그는 반드시 부모 태그를 가지고, ul 태그는 반드시 자식 태그를 가진다.</p>
+            <p>불릿(•)으로 표시하는 ul태그와 달리, <strong>ol 태그(ordered list)는 순서(1,2,3)가 있는 목록을 만든다.</strong> 넘버링은 자동으로 된다. 즉, 목록 중 하나를 삭제해도 
+            숫자는 자동으로 업데이트 되어 일일이 수정할 필요가 없다.</p>
+         <h3>문서의 구조.</h3>
+            <p>title 태그로 웹페이지의 제목(책으로 비유하면 표지)을 설정한다. 검색 엔진들이 이 태그를 제목과 같은 정보로 이용한다. title태그를 쓰지 않으면 
+               노출도, 접근성에서 큰 손해이다.</p>
+            <p>UTF-8은 인코딩의 한 종류이다. 인코딩 encoding은 컴퓨터가 정보(자연어 등)를 약속된 규칙에 의해 변환(0과 1로)하는 과정을 지칭한다.
+            <br>메타 meta 태그는 웹 페이지의 제목, 문자 인코딩, 페이지 설명, 작성자 등과 같은 정보를 제공하는 역할을 한다. charset의 cara는 문자(character), set는 집합이라는 뜻이다. 
+            다시 말하자면 브라우저에게 utf-8로 읽으라고 하는 것이다.</p>
+            <p>title, meta 같이 본문을 설명하는 태그들은 head 태그로, 본문은 body 태그로 묶는다. 고위직 태그(head, body)를 감싸는 최고위층 태그: html 태그.
+            <br>html 태그 위에, 관용적으로 '이 문서는 html이 담겨있어요.'를 의미하는 !DOCTYPE HTML을 쓴다. <a href="1-13.html">예시</a></p>
+         <h3>태그의 제왕</h3>
+            <p><strong>a 태그.</strong> <u>링크</u>를 거는 태그이며,anchor에서 유래되었다.링크를 걸고 싶은 곳을 a태그를 감싸면 된다. 여는 a 태그 뒤에 <strong>속성( href="")</strong>을 추가한다. 
+               하이터텍스트의 h와 reference의 ref를 합쳤다.
+            <br>링크를 새 탭에서 열리게 하고 싶다면, <strong>target 속성( target="_blank")</strong>을 추가한다. 튤팁처럼 무언가를 알려주고 싶다면 <strong>title 속성( title="")</strong>을 추가한다. 
+            <a href="1-14.html">예시</a><a href="1-15.html">들</a></p>
+
+      <h2>Notes 4</h2>
+         <h3>웹 서버 사용하기; 두 가지의 업로드 방식</h3>
+            <h4>1. 웹 호스팅(깃허브 페이지로)</h4>
+               <p>사실 깃허브는 개발자들이 소스코드를 백업하고, 그것을 매개로 서로 협업하기 위한 사이트다. 웹 호스팅 서비스도 제공하기에 유용하다. 지금 보고 있는 이 사이트도 깃허브로 호스팅 되었다.</p>
+               <p>깃허브 웹 호스팅을 사용하려면 <strong>우선,</strong> 계정을 만들어 가입하고 로그인을 한다. <strong>그 다음,</strong> <u>저장소(repository)</u>를 만들어야 한다. 왼쪽에 [new] 버튼(저장소가 없을 시 create repository)이나 
+                  우측 상단의 (+)버튼, [new repository]순으로 클릭한다. <strong>마지막으로,</strong> [create repository] 버튼을 클릭해 저장소를 생성하면 된다.</p>
+               <p>이제 저장소에 소스코드를 업로드하면 된다. 'Quick setup'(파란 부분)의 하단을 보면 두 개의 링크: <u>creating a new file</u>과 <u>uploading an existing file</u>이 있다. 이미 파일이 존재하므로 후자를 클릭해야한다.</p>
+   </body>
+</html>
